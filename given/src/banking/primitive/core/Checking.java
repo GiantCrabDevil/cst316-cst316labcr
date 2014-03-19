@@ -1,3 +1,12 @@
+/*
+  File:	Checking.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: A checking account class; it implements the framework Account class.
+*/
+
+
 package banking.primitive.core;
 
 public class Checking extends Account {

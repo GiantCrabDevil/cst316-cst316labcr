@@ -9,14 +9,15 @@ public class Checking extends Account {
 		super(name);
 	}
 
-    public static Checking createChecking(String name) {
-        return new Checking(name);
-    }
 
 	public Checking(String name, float balance) {
 		super(name, balance);
 	}
 
+	public static Checking createChecking(String name) {
+	    return new Checking(name);
+	}
+	
 	/**
 	 * A deposit may be made unless the Checking account is closed
 	 * @param float is the deposit amount
@@ -31,7 +32,7 @@ public class Checking extends Account {
 		}
 		return false;
 	}
-
+	
 	/**
 	 * Withdrawal. After 10 withdrawals a fee of $2 is charged per transaction You may 
 	 * continue to withdraw an overdrawn account until the balance is below -$100

@@ -1,3 +1,14 @@
+
+
+
+
+
+/**
+*	Class: AccountServer
+*
+*	Description: Abstract account controller model.
+*/
+
 package banking.primitive.core;
 
 import java.io.IOException;

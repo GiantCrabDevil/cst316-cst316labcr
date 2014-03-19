@@ -1,3 +1,12 @@
+/*
+  File:	ServerSolution.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: A Server Solution class, that implements the AccountServer class and handles the bank accounts.
+*/
+
+
 package banking.primitive.core;
 
 import java.util.ArrayList;

@@ -1,3 +1,12 @@
+/*
+  File:	AccountServerFactory.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: Controls for a server containing accounts
+*/
+
+
 package banking.primitive.core;
 
 

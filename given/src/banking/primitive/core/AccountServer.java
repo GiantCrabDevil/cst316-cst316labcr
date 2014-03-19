@@ -1,3 +1,12 @@
+/*
+  File:	AccountServer.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: An object that holds accounts on the server
+*/
+
+
 package banking.primitive.core;
 
 import java.io.IOException;
@@ -17,12 +26,6 @@ public interface AccountServer {
 	*/
 	public boolean	newAccount(String type, String name, float balance) throws IllegalArgumentException;
 
-	/** Close an account 
-		@param name leading or trailing whitespace is removed
-	 * @return boolean true if there was an account with this name and close was successful
-	*/
-	public boolean	closeAccount(String name);
-
 	/**
 	 * @param name name of the account 
 	 * @return Account object or null if not found. 
@@ -38,6 +41,12 @@ public interface AccountServer {
 	 * @return a list of Accounts inside the server that are not CLOSED
 	 */
 	public List<Account> getActiveAccounts();
+	
+	/** Close an account 
+		@param name leading or trailing whitespace is removed
+	 * @return boolean true if there was an account with this name and close was successful
+	*/
+	public boolean	closeAccount(String name);
 
 	/** 
 	 * Saves the state of the server

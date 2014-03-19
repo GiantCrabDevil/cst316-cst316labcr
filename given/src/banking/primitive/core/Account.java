@@ -1,3 +1,12 @@
+/*
+  File:	Account.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: Basic outline and functionality of an account used as a framework for checking and savings account
+*/
+
+
 package banking.primitive.core;
 
 public abstract class Account implements java.io.Serializable {
@@ -7,8 +16,8 @@ public abstract class Account implements java.io.Serializable {
         OPEN, CLOSED, OVERDRAWN
     };
 
-    protected float balance = 0.0F;
-    protected String name;
+    private float balance = 0.0F;
+    private String name;
     private State state;
 
     protected Account(String n) {
@@ -17,7 +26,8 @@ public abstract class Account implements java.io.Serializable {
     }
 
     protected Account(String n, float b) {
-        this(n); 
+        name = n;
+        state = State.OPEN;
         balance = b;
     }
 

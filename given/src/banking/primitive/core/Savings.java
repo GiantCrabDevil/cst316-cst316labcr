@@ -1,3 +1,12 @@
+/*
+  File:	Savings.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: A savings account class; it implements the framework Account class.
+*/
+
+
 package banking.primitive.core;
 
 public class Savings extends Account {
@@ -44,8 +53,17 @@ public class Savings extends Account {
 		return false;
 	}
 	
-	public String getType() { return "Checking"; }
+	public String getType() {
+		return "Checking";
+	}
 
+	/**
+	* Method: toString
+	* Inputs:none
+	* Returns: The name of the Savings account and the balence of the account
+	*
+  	* Description: Method to return a string representation of this class
+	**/
 	public String toString() {
 		return "Savings: " + getName() + ": " + getBalance();
 	}

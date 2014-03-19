@@ -1,3 +1,14 @@
+
+
+
+
+
+/**
+*	Class: Account
+*
+*	Description: Provides interface for looking up an AccountServer
+*/
+
 package banking.primitive.core;
 
 

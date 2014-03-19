@@ -1,3 +1,16 @@
+
+
+
+
+
+/**
+*	Class: Account
+*
+*	Description: Abstract account model that various account types are
+*			realized.
+*/
+
+
 package banking.primitive.core;
 
 public abstract class Account implements java.io.Serializable {

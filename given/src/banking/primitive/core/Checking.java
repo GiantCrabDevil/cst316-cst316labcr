@@ -1,3 +1,15 @@
+
+
+
+
+
+/**
+*	Class: Checking
+*
+*	Description: Realization of account class with additional account
+* 			management functionality.
+*/
+
 package banking.primitive.core;
 
 public class Checking extends Account {
@@ -38,12 +50,12 @@ public class Checking extends Account {
 	 */
 	public boolean withdraw(float amount) {
 		if (amount > 0.0f) {		
-			// KG: incorrect, last balance check should be >=
 			if (getState() == State.OPEN || (getState() == State.OVERDRAWN && balance > -100.0f)) {
 				balance = balance - amount;
 				numWithdraws++;
-				if (numWithdraws > 10)
+				if (numWithdraws > 10) {
 					balance = balance - 2.0f;
+				}
 				if (balance < 0.0f) {
 					setState(State.OVERDRAWN);
 				}

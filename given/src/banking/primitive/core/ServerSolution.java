@@ -1,3 +1,15 @@
+
+
+
+
+
+/**
+*	Class: ServerSolution
+*
+* 	Description: Realization of AccountServer; Controller for accounts
+*			in regards to opening, closing, and retrieval.
+*/
+
 package banking.primitive.core;
 
 import java.util.ArrayList;
@@ -27,8 +39,9 @@ class ServerSolution implements AccountServer {
 				int size = sizeI.intValue();
 				for (int i=0; i < size; i++) {
 					Account acc = (Account) in.readObject();
-					if (acc != null)
+					if (acc != null) {
 						accountMap.put(acc.getName(), acc);
+					}
 				}
 			}
 		} catch (Exception e) {
@@ -48,7 +61,9 @@ class ServerSolution implements AccountServer {
 	private boolean newAccountFactory(String type, String name, float balance)
 		throws IllegalArgumentException {
 		
-		if (accountMap.get(name) != null) return false;
+		if (accountMap.get(name) != null) {
+			return false;
+		}
 		
 		Account acc;
 		if ("Checking".equals(type)) {
@@ -71,7 +86,9 @@ class ServerSolution implements AccountServer {
 	public boolean newAccount(String type, String name, float balance) 
 		throws IllegalArgumentException {
 		
-		if (balance < 0.0f) throw new IllegalArgumentException("New account may not be started with a negative balance");
+		if (balance < 0.0f) {
+			throw new IllegalArgumentException("New account may not be started with a negative balance");
+		}
 		
 		return newAccountFactory(type, name, balance);
 	}

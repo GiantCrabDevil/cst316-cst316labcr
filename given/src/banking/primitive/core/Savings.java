@@ -48,6 +48,13 @@ public class Savings extends Account {
 		return "Checking";
 	}
 
+	/**
+	* Method: toString
+	* Inputs:none
+	* Returns: The name of the Savings account and the balence of the account
+	*
+  	* Description: Method to return a string representation of this class
+	**/
 	public String toString() {
 		return "Savings: " + getName() + ": " + getBalance();
 	}

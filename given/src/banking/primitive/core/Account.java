@@ -1,3 +1,12 @@
+/*
+  File:	Account.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: Basic outline and functionality of an account used as a framework for checking and savings account
+*/
+
+
 package banking.primitive.core;
 
 public abstract class Account implements java.io.Serializable {

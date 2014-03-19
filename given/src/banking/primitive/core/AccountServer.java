@@ -1,3 +1,12 @@
+/*
+  File:	AccountServer.java
+  Author: Dr. Gary
+  Date:	3/19/14
+  
+  Description: An object that holds accounts on the server
+*/
+
+
 package banking.primitive.core;
 
 import java.io.IOException;
